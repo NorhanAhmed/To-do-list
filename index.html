@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img"></div>
+ <div class="title" ><h2>To-Do-list</h2></div>
+ <div class="start">
+    <input id="activity" name="doinputDiv" type="text" autocomplete="off" placeholder="Put your activity">
+    <button onclick=todoplay() id="addbtn">Add</button>
+ </div>
+ <div class="contain">
+    <div class="holdDiv">
+        <h3>Hold</h3>
+        <div id="hold"   ondrop="drop(event)" ondragover="dragover(event)">
+    </div>
+    </div>
+    <div class="progressDiv">
+        <h3>Progress</h3>
+        <div id="Progress"   ondrop="drop(event)" ondragover="dragover(event)">  </div>
+
+         
+      
+    </div>
+    <div class="reviewDiv">
+        <h3>Review</h3>
+        <div id="review"  ondrop="drop(event)" ondragover="dragover(event)">
+           
+            
+        </div>
+    </div>
+    <div class="doneDiv">
+        <h3>Done</h3>
+        <div id="done"  ondrop="drop(event)" ondragover="dragover(event)">
+        </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</div>
+    
+<script src="js/script.js"></script>
+</body>
+</html>
